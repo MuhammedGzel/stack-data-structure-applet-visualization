@@ -1,5 +1,5 @@
 
-package yıgıtapplet;
+package stackapplet;
 
 import java.applet.Applet;
 import java.awt.*;
