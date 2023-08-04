@@ -1,5 +1,5 @@
 
-package yıgıtapplet;
+package stackapplet;
 
 
 public class StackClass {
