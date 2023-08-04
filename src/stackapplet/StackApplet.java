@@ -17,7 +17,7 @@ public class StackApplet extends Applet implements ActionListener {
    Button push = new Button("Push()");
    Button pop = new Button("Pop()");
    Button show = new Button("Show()");
-   TextField t = new TextField(10);
+   TextField numbertoInsert = new TextField(10);
    StackClass numbers = new StackClass(20);
 
    public void init() {
@@ -29,8 +29,8 @@ public class StackApplet extends Applet implements ActionListener {
       pop.setBounds(345, 40, 70, 40);
       add(show);
       show.setBounds(590, 40, 70, 40);
-      add(t);
-      t.setBounds(342, 120, 80, 25);
+      add(numbertoInsert);
+      numbertoInsert.setBounds(342, 120, 80, 25);
       push.addActionListener(this);
       pop.addActionListener(this);
       show.addActionListener(this);
@@ -59,9 +59,9 @@ public class StackApplet extends Applet implements ActionListener {
             g.drawString("Stack is full", 340, 100);
             System.out.println("Stack is full");
          } else {
-            g.drawString(t.getText(), x + 20, y + 18);
+            g.drawString(numbertoInsert.getText(), x + 20, y + 18);
             try {
-               numbers.push(Integer.parseInt(t.getText()));
+               numbers.push(Integer.parseInt(numbertoInsert.getText()));
                g.setColor(Color.white);
                g.fillRect(340, 85, 100, 30);
                JFrame frame = new JFrame();
@@ -97,7 +97,7 @@ public class StackApplet extends Applet implements ActionListener {
             JFrame frame = new JFrame();
             JOptionPane.showMessageDialog(frame, "Stack is empty");
          } else {
-            t.setText(String.valueOf(numbers.returnTop()));
+            numbertoInsert.setText(String.valueOf(numbers.returnTop()));
          }
       }
 
