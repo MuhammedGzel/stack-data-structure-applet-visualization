@@ -13,19 +13,11 @@ public class StackClass {
     }
 
     public boolean isFull() {
-        if (top == this.size - 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return top == this.size - 1;
     }
 
     public boolean isEmpty() {
-        if (top == -1) {
-            return true;
-        } else {
-            return false;
-        }
+        return top == -1;
     }
 
     public int pop() {
