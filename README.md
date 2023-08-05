@@ -3,8 +3,6 @@ It is a java applet application that provides a better understanding of the stac
 
 ![alt](https://github.com/MuhammedGzel/stack-data-structure-applet-visualization/blob/main/addScreenshot.png)
 
-![alt](https://github.com/MuhammedGzel/stack-data-structure-applet-visualization/blob/main/returnTopScreenshot.png)
-
 # Requirements
 - Java versions 8 and below are required for this application to work.
 - Download repo and just run "StackApplet.java", application will run. 
