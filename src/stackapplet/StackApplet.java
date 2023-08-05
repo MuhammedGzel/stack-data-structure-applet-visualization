@@ -18,6 +18,7 @@ public class StackApplet extends Applet implements ActionListener {
     TextField numbertoInsert = new TextField(10);
     StackClass numbers = new StackClass(20);
 
+    @Override
     public void init() {
         setSize(780, 800);
         setLayout(null);
@@ -35,6 +36,7 @@ public class StackApplet extends Applet implements ActionListener {
 
     }
 
+    @Override
     public void paint(Graphics g) {
         for (int i = 0; i < 20; i++) {
             int x1 = 350;
