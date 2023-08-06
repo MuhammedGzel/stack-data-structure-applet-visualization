@@ -59,13 +59,11 @@ public class StackApplet extends Applet implements ActionListener {
                 g.drawString("Stack is full", 340, 100);
                 System.out.println("Stack is full");
             } else {
-                g.drawString(numbertoInsert.getText(), x + 20, y + 18);
                 try {
                     numbers.push(Integer.parseInt(numbertoInsert.getText()));
+                    g.drawString(numbertoInsert.getText(), x + 20, y + 18);
                     g.setColor(Color.white);
                     g.fillRect(340, 85, 100, 30);
-                    JFrame frame = new JFrame();
-                    JOptionPane.showMessageDialog(frame, numbertoInsert.getText() + " added.");
                     y = y - 31;
                 } catch (NumberFormatException ee) {
                     JFrame frame = new JFrame();
@@ -84,8 +82,6 @@ public class StackApplet extends Applet implements ActionListener {
                 g.fillRect(340, 85, 100, 30);
                 g.fillRect(x + 1, y + 32, 50, 18);
                 numbers.pop();
-                JFrame frame = new JFrame();
-                JOptionPane.showMessageDialog(frame, "Pop process has been performed.");
                 y = y + 31;
             }
         }
